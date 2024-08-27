@@ -49,7 +49,7 @@ body {
 
 .spaceTop {
   /* margin-top: 150px;*/
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .containerZ {
@@ -62,15 +62,112 @@ body {
   height: 300px; /* Adjust as needed */
 }
 
-.MyProjectsDiv {
-  text-align: center;
-  font-size: 25px;
+.scrollmenu {
+  display:flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Make sure the images stay in one line */
+  background-color: #f1f1f1;
+  padding: 1% 1%; /* Optional: Padding around the scrollbar */
+  justify-content: space-evenly;
 }
 
-.MyProjectsList li{
+.scrollmenu .item {
+  margin: 2% 1.5%; /* Optional: Adjust spacing between items */
+  text-align: center; /* Center align items */
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scrollmenu img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  flex: 1 1 auto;
+}
+
+.scrollmenu p {
+  margin-top: 5px; /* Space between image and text */
+  font-size: 14px; /* Example font size */
+  color: #333; /* Example text color */
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.MyProjectsH1 {
+  text-align: center;
+  font-size: 30px ;
+}
+
+.skills {
+  text-align:  center;
+}
+
+.skills img {
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
+}
+
+.skills li {
   display: inline-block;
-  list-style-type: none;
-  margin-left: 5%;
-  margin-right: 5%;
-  border: solid;
+  vertical-align: text-top;
+  margin: 15px;
+}
+.skills span {
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto; /* Center the form */
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  text-align: center;
+}
+
+.logo img{
+  max-width: 250px;
+  max-height: 250px;
 }

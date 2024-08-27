@@ -1,0 +1,109 @@
+.scrollmenu {
+    display:flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Make sure the images stay in one line */
+    background-color: #f1f1f1;
+    padding: 1% 1%; /* Optional: Padding around the scrollbar */
+    justify-content: space-evenly;
+}
+
+.scrollmenu .item {
+    margin: 2% 1.5%; /* Optional: Adjust spacing between items */
+    text-align: center; /* Center align items */
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrollmenu img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    flex: 1 1 auto;
+}
+
+.scrollmenu p {
+    margin-top: 5px; /* Space between image and text */
+    font-size: 14px; /* Example font size */
+    color: #333; /* Example text color */
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+  background-color: #00b8ff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #00b8ff;
+}
+
+.navbar a:hover {
+  background-color: #79d9ff;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.spanIntro {
+  margin-right: 2%
+}
+
+.spaceTop {
+  /* margin-top: 150px;*/
+  margin-top: 12%;
+}
+
+.containerZ {
+  margin-inline-start: 2%;
+  margin-top: 12%;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  text-align: center; /* Center text inside div */
+  height: 300px; /* Adjust as needed */
+}
+
+.MyProjectsDiv {
+  text-align: center;
+  font-size: 25px;
+}
+
+.MyProjectsList li{
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: solid;
+}
+
